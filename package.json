@@ -1,0 +1,18 @@
+{
+  "name": "auth-network",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "scripts": {
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd Backend && nodemon .",
+    "start:frontend": "cd Frontend && npm run serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [],
+  "license": "ISC"
+}
